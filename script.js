@@ -1,9 +1,6 @@
-function userChoice() {
-    const userChoice = prompt("Do you choose Rock, Paper, or Scissors?").toLowerCase();
-    return userChoice
-  }
-  
-  //originally tried using random int, math.random was easier to use. Thanks Google
+
+//Logic   
+  //computer chhoice via math random
   function compChoice() {
     let compChoice = Math.random();
     if (compChoice < 0.34) {
@@ -55,8 +52,19 @@ function userChoice() {
     return "That's not a valid choice";
   }
 }
+console.log(playRound(userChoice(), compChoice()))
 
-//5 game round with 5 user input
+/*
+//This is to play game in console without UI
+function userChoice() {
+  const userChoice = prompt("Do you choose Rock, Paper, or Scissors?").toLowerCase();
+    return userChoice
+}
+
+
+5 game round with 5 user input, need to unccomment game() below and 
+you will get 5 alerts, results posted after in console 
+
 function game(){
     for(let i=0;i<5;i++){
     playRound(userChoice(), compChoice()); 
@@ -68,6 +76,6 @@ function game(){
     }
     
 }
+console.log(game())
+*/
 
-console.log(playRound(userChoice(), compChoice()))
-// console.log(game())
