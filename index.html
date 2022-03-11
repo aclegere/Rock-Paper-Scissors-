@@ -9,18 +9,22 @@
 </head>
 <body>
     <div class="choice-container">
-        <img src="rock.jpeg" width="200" height="250">
-        <img src="paper.jpeg" width="200" height="250">
-        <img src="scissors.jpeg" width="200" height="250">
+        <button id="rock">
+            <img src="rock.jpeg" width="200" height="250">
+        </button>
+        <button id="paper">
+            <img src="paper.jpeg" width="200" height="250">
+        </button>
+        <button id="scissors">
+            <img src="scissors.jpeg" width="200" height="250">
+        </button>
     </div>
     <div class="reset">
-        <button class = "btn">Reset!</button>
+        <button id = "btn">Reset!</button>
     </div>
-    <div class="score-container">
-        <div class="winCondition">Best of Five!</div>
-        <div class ="playerScore">Your score:</div>
-        <div class ="cpuScore">Computer score:</div>
-    </div>
+    <div class="winCondition">Best of Five!</div>
+    <p id="outcome"></p>
+    <p2 id="win-lose"></p2>
 </body>
 <script src="script.js"></script>
 </html>

@@ -2,6 +2,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
     padding-top: 15rem;
 }
 
@@ -9,9 +10,10 @@
     display:flex;
     justify-content: center;
     align-items: center;  
+    padding-top: 2rem;
 }
 
-.btn {
+#btn {
     border-radius: 50%;
     background-color: white;
   color: black;
@@ -20,18 +22,29 @@
   transition-duration: 0.4s;
 }
 
-.btn:hover {
+#btn:hover {
     background-color: black;
     color: white;
 }
 
-.score-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5rem;
-}
 
 .winCondition{
-    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#outcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#win-lose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
 }
